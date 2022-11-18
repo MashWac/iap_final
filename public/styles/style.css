@@ -1,0 +1,423 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#userpanel{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    display:ruby-base;
+    padding-right: 20px;
+}
+.dropdownoptions{
+    padding: 10px;
+    padding-top: 30px;
+    display:inline-block;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    visibility: hidden;
+    position: relative;
+
+}
+.dropdownoptions::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    transform: rotate(45deg);
+}
+.dropdownoptions.active{
+    padding: 10px;
+    padding-top: 30px;
+    display:inline-block;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    visibility: visible;
+    width: fit-content;
+    position: relative;
+    z-index: 5;
+}
+
+#uname{
+    padding-bottom: 15px;
+}
+.uoption{
+    text-decoration: none;
+    font-size: 11px;
+    color: rgb(68, 68, 68);
+}
+.uoption:hover{
+    color: rgb(114, 240, 223);
+}
+#displayuserdetails{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    font-style: italic;
+}
+h2{
+    color: rgb(94, 3, 3);
+}
+#cartdetails{
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+}
+#cartdetails:hover{
+
+    color: rgb(202, 198, 198);
+}
+#cartCount{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    font-style: normal;
+    color: black;
+}
+nav ul{
+    margin:0;
+    padding: 0;
+    padding-top: 24px;
+    list-style: none;
+}
+nav li{
+    display: inline;
+    margin: 10px;
+    padding-top: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;    
+}
+
+#mainbody{
+    min-height: 100%;
+    margin: 5%;
+    margin-top: 2%;
+}
+
+
+.cats{
+    width: 1000px;
+    height: 650px;
+    margin: auto;
+    float: inline-end;
+}
+.card{
+    margin: 20px;
+}
+.row{
+    float:right;
+    /* display: inline-block; */
+}
+.card-img-top {
+     width: 80%;
+    height: 30vw; 
+    object-fit: cover;
+}
+
+#headline{
+    background-image: url(../photos/fash2.jpg);
+    padding: 200px;
+    background-size: cover;
+}
+#headlinehead{
+    padding-left: 1%;
+    padding-right: 50%;
+    color: rgb(180, 177, 177);
+    font-size: 60px;
+    font-family: 'Zen Antique', serif;
+}
+#headlinebody{
+    padding-left: 1%;
+    padding-right: 60%;
+    color: rgb(199, 106, 106);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+
+#companydetails{
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+#footer{
+    position: sticky;
+    top: 100%;
+    color: snow;
+    height: 350px;
+    margin-top: 10%;
+    padding-top: 30px;
+}
+#footercontent{
+    background: rgb(95, 0, 0);
+    padding-top: 20px;
+    border:2px rgb(131, 30, 12);
+    height: 300px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(180, 177, 177);
+}
+#footer-bottom{
+    padding-top:20px ;
+    background: rgb(48, 1, 1);
+    color: whitesmoke;
+    height: 50px;
+    width: 100%;
+    text-align: center; 
+}
+#Regcontent{
+    max-width: 100%;
+    height: 600px;
+    width: 1500px;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    margin: auto;
+    background-image: url(../photos/fash1.jpg);
+    background-size: cover;
+
+}
+#formbody{
+    max-width: 500px;
+    border: none;
+    float: left;
+}
+#formbody>h3{
+    color: rgb(92, 5, 5);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+#formbody>form{
+    width: 100%;
+}
+.inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+.inputfield label{
+    width: 200px;
+    color: 757575;
+    margin-right: 10px;
+    font-size: 14px;
+
+}.inputfield input{
+    width: 100%;
+    outline: none;
+    border: 1px solid;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.inputfield2{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+.inputfield2 label{
+    width: 200px;
+    color: 757575;
+    font-size: 14px;
+
+}.inputfield2 input{
+    width: 100%;
+    outline: none;
+    border: 1px solid;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.button{
+    
+    background-color:rgb(88, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    outline: none;
+    border: rgb(194, 194, 194);
+    border-radius: 3px;
+}
+.button:hover{
+    background-color: rgb(194, 15, 15);
+}
+#alreadymember{
+    max-width: 500px;
+    width: 100%;
+    float: left;
+    padding-top: 200px;
+    text-align: center;
+}
+#alreadymember>h2{
+    color: rgb(113, 138, 136);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+#Logincontent{
+    height: 400px;
+    width:100%;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-top: 40px;
+    position: relative;
+    align-items: center;
+    background-image: url(../photos/loginphoto.jpg);
+    background-size: cover;
+  
+}
+
+#loginformbody{
+    max-width: 600px;
+   
+}
+#loginformbody>h3{
+    color: rgb(112, 1, 1);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+span{
+    font-style: italic;
+    font-weight: bold;
+}
+#prodpage{
+    margin: 5%;
+}
+#carttable{
+    border-collapse: collapse;
+    margin:25px 0;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    
+}
+#carttable thead tr{
+    background-color: rgb(112, 3, 3);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+#carttable th,.table td{
+    margin-left: 30px;
+}
+#carttable tbody tr{
+    border-bottom: 1.2px solid #b1afaf;
+}
+#carttable tbody tr:nth-of-type(even){
+    background-color: #fdf2f2;
+}
+#carttable tbody tr:last-of-type{
+    border-bottom:2px solid rgb(122,3,3);
+}
+#carttable tbody tr:hover{
+    background-color: rgb(189, 218, 215);
+}
+#pricingdetails{
+    border-radius: 5px 5px 0 0;
+    border: black 0.5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 15px;
+
+}
+
+.purchaseinfo{
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#orderinfo{
+    width:100%
+}
+.Accorcionitem{
+    background-color:  rgb(221, 221, 221);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.4rem;
+    box-shadow: .6rem 5px .6rem rgb(204, 204, 204);
+}
+.accordionlink{
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    background-color:  rgb(201, 201, 201);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.ion-icon{
+    color: rgb(0, 0, 0);
+    padding: .5rem;
+}
+.ion-icon[name="remove"]{
+    display: none;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 650ms;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .9rem;
+    height: 60%;
+    background-color: rgb(0, 0, 0);
+    top: 20%;
+    left: 0;
+    transform: translate(-50%);
+}
+.answer p{
+    background-color:  rgb(168, 168, 168);
+    font-size: 1rem;
+    padding: 1.5rem;
+    color: rgb(0, 0, 0);
+
+}
+.Accorcionitem:target .answer{
+    max-height: fit-content;
+}
+.Accorcionitem:target .accordionlink .ion-icon[name="add-outline"]{
+    display: none;
+}
+.Accorcionitem:target .accordionlink .ion-icon[name="remove"]{
+    display: block;
+}
+#walletinfo{
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.editingprof{
+    float: left;
+    margin-left: 5%;
+}

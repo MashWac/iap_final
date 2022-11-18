@@ -1,0 +1,40 @@
+
+html{
+    z-index: 2;
+}
+.container{
+    margin: 70px, auto;
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+    max-width: 35%;
+    z-index: 2;
+    
+}
+.container>nav{
+    position: fixed;
+    background: rgb(113, 138, 136);
+    min-height: 100%;
+
+
+}
+
+nav ul{
+    margin-left:0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+nav li{
+    margin: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;    
+}
+nav a:hover{
+    color: rgb(104, 0, 0);
+}
